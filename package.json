@@ -1,7 +1,7 @@
 {
   "name": "heroicons-exports",
   "license": "MIT",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "A set of free MIT-licensed high-quality SVG icons for UI development.",
   "keywords": [
     "icons",
@@ -20,9 +20,10 @@
     "LICENSE"
   ],
   "exports": {
-    "./16/*": "./16/*/*.svg",
-    "./20/*": "./20/*/*.svg",
-    "./24/*": "./24/*/*.svg"
+    "./16/solid/*.svg": "./16/solid/*.svg",
+    "./20/solid/*.svg": "./20/solid/*.svg",
+    "./24/outline/*.svg": "./24/outline/*.svg",
+    "./24/solid/*.svg": "./24/solid/*.svg"
   },
   "scripts": {
     "prepublishOnly": "npm run build",
