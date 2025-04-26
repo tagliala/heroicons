@@ -8,7 +8,10 @@
     "svg",
     "tailwindcss"
   ],
-  "repository": "https://github.com/tailwindlabs/heroicons.git",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tagliala/heroicons.git"
+  },
   "files": [
     "16/",
     "20/",
@@ -16,6 +19,11 @@
     "README.md",
     "LICENSE"
   ],
+  "exports": {
+    "./16/*": "./16/*/*.svg",
+    "./20/*": "./20/*/*.svg",
+    "./24/*": "./24/*/*.svg"
+  },
   "scripts": {
     "prepublishOnly": "npm run build",
     "lint": "node ./scripts/verify-names.js",
